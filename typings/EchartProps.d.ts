@@ -1,29 +1,28 @@
 /**
- * This file was generated from Graph.xml
+ * This file was generated from Echart.xml
  * WARNING: All changes made to this file will be overwritten
  * @author Mendix UI Content Team
  */
 import { CSSProperties } from "react";
-import { EditableValue, ListValue, ListAttributeValue } from "mendix";
+import { ListValue, ListAttributeValue } from "mendix";
+import { Big } from "big.js";
 
-export interface GraphContainerProps {
+export interface EchartContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    sampleText: string;
-    attribute?: EditableValue<string>;
-    datasource: ListValue;
-    att2?: ListAttributeValue<string>;
+    optionString: string;
+    Score: ListValue;
+    ScoreValue?: ListAttributeValue<Big>;
 }
 
-export interface GraphPreviewProps {
+export interface EchartPreviewProps {
     className: string;
     style: string;
     styleObject?: CSSProperties;
     readOnly: boolean;
-    sampleText: string;
-    attribute: string;
-    datasource: {} | { type: string } | null;
-    att2: string;
+    optionString: string;
+    Score: {} | { type: string } | null;
+    ScoreValue: string;
 }
